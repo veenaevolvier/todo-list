@@ -1,5 +1,11 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  .login-main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
 
 
 .mainDiv{
@@ -34,14 +40,14 @@ flex-direction: column;
     flex-direction: column;
     border-radius: 0px;
 }
-body {
+/* body {
     margin: 0;
     padding: 0;
     height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .greenText{
     color: #03A500;
     font-family: 'poetsenOne';
@@ -87,7 +93,7 @@ body {
     
 
   }
-  .box{
+  .login-box{
       border-radius: 11px;
       padding: 12px 16px;
       border: 1px solid #646363;
@@ -103,15 +109,9 @@ body {
     
   }
   
-h1 {
-  font-size: 24px;
-}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 18px;
-  }
   .green{
     color:#717171;
   
@@ -140,13 +140,7 @@ h1 {
      
   
   }
-  .App{
-    display: flex;
-    justify-content: center;
-  }
-  #root{
-    width: 100%;
-  }
+  
   
 }
 

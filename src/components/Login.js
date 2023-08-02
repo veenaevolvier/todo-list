@@ -25,8 +25,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 
-export const Login = (props) => {
-    console.log(props)
+export const Login = ({onLogin}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
@@ -45,7 +44,8 @@ export const Login = (props) => {
     // For the example, we'll just simulate a simple login check:
     if (email === 'veena@evolvier.com' && password === '12345') {
       // Successful login
-      alert('Login successful!');
+      // alert('Login successful!');
+      onLogin()
     } else {
       // Failed login
       setLoginError('Invalid email or password.');
@@ -53,6 +53,7 @@ export const Login = (props) => {
   };
 
   return (
+    <div className='login-main'>
     <div className="mainDiv">
       <img className="logo" src="/My TO DO.png" alt="Example" />
       <div>
@@ -65,7 +66,7 @@ export const Login = (props) => {
       </div>
       <form className="form" onSubmit={handleSubmit}>
         <input
-          className="box"
+          className="login-box"
           type="email"
           placeholder="Username"
           id="email"
@@ -76,7 +77,7 @@ export const Login = (props) => {
         />
         <br />
         <input
-          className="box"
+          className="login-box"
           type="password"
           placeholder="Password"
           id="password"
@@ -91,6 +92,7 @@ export const Login = (props) => {
         </button>
       </form>
       {loginError && <div className="error">{loginError}</div>}
+    </div>
     </div>
   );
 };

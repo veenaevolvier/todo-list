@@ -1,12 +1,4 @@
-/* .box{
-    width: 999px;
-    height: 598px;
-    top: 211px;
-    left: 467px;
-    border-radius: 30px;
 
-} */
-/* src/BoxWithText.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&display=swap');
 
@@ -14,7 +6,7 @@
 .onebox{
 
             max-width: 1600px;
-            padding: 12px 16px;
+            /* padding: 12px 16px; */
             background-color: #FFFFFF;
             /* right: 245px; */
             
@@ -23,10 +15,11 @@
             /* border-style: none none solid none; */
 
             box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+            width: 100%
 
             ;
         }
-.box {
+.page1-box {
     /* width: 609px;
     height: 140px;
     background-color: #F6F4F4;
@@ -54,7 +47,7 @@
     left: 230px;
 
   }
- h1{
+ .page1-text{
     /* width: 492px; */
     /* height: 6px; */
     /* top: 10px;
@@ -72,7 +65,7 @@
 
     
   }
-  p {
+  .page1-p {
     width: 900px;
     padding: 30px;
     border: 1px solid none;
@@ -158,9 +151,15 @@
   /* object-fit: cover;
   border-radius: 50%; */
 }
-.maindiv{
+.page1-maindiv{
   position: absolute;
   bottom: -37px;
   right: 27px;
   
+}
+.new{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
